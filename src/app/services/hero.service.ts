@@ -8,6 +8,10 @@ export class HeroService {
   getHeroes(): Array<SuperHero> {
     return superHeroes;
   }
+
+  getHeroesById(id: number): SuperHero {
+    return superHeroes.find(el => el.id == id);
+  }
 }
 
 var superHeroes: Array<SuperHero> = [
