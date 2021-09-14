@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { Page404Component } from './components/page404/page404.component';
+import { HeroDetailComponent } from './components/hero-detail/hero-detail.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { Page404Component } from './components/page404/page404.component';
     HomeComponent,
     ContactComponent,
     GalleryComponent,
+    HeroDetailComponent,
   Page404Component ],
   bootstrap:    [ AppComponent ]
 })
