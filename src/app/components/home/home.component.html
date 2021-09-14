@@ -1,3 +1,12 @@
-<p>
-home works!
-</p>
+<div class="row row-cols-1 row-cols-md-2 g-4" *ngFor="let hero of heroes">
+  <div class="col">
+    <div class="card">
+      <img src="{{hero.img}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{hero.name}}</h5>
+        <p class="card-text">{{hero.description}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
