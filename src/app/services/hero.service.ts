@@ -46,17 +46,6 @@ var superHeroes: Array<SuperHero> = [
       'https://w7.pngwing.com/pngs/642/930/png-transparent-green-lantern-logo-green-lantern-corps-hal-jordan-superman-logo-green-lantern-logo-comics-cdr-lantern.png'
   },
   {
-    id: 3,
-    name: 'Linterna Verde',
-    description:
-      'Linterna Verde es el alias de varios superhéroes de la ficción del Universo DC, de la editorial DC Comics, los cuales se caracterizan por portar un anillo de poder y tener la capacidad de crear manifestaciones de luz sólida con dichos anillos.',
-    ano: 1940,
-    franquicia: 'DC comics',
-    img: 'https://img.ecartelera.com/noticias/fotos/62500/62594/1.jpg',
-    logo:
-      'https://w7.pngwing.com/pngs/642/930/png-transparent-green-lantern-logo-green-lantern-corps-hal-jordan-superman-logo-green-lantern-logo-comics-cdr-lantern.png'
-  },
-  {
     id: 4,
     name: 'Aquaman',
     description:
