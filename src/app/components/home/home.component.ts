@@ -10,9 +10,9 @@ import { HeroService } from '../../services/hero.service';
 })
 export class HomeComponent implements OnInit {
   heroes: Array<SuperHero>;
-  heroFrom: FormGroup;
+  heroForm: FormGroup;
   constructor(private heroService: HeroService ) {
-    this.heroFrom = new FormGroup({
+    this.heroForm = new FormGroup({
       nombre: new FormControl('', [Validators.required, Validators.minLength(20)]),
       telefono : new FormControl(0, Validators.required),
       direccion: new FormGroup({
@@ -24,6 +24,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.heroes = this.heroService.getHeroes();
+  }
+
+  onSubmit(){
+    console.log(this.heroForm.value)
   }
 }
 
