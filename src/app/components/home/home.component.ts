@@ -14,7 +14,11 @@ export class HomeComponent implements OnInit {
   constructor(private heroService: HeroService ) {
     this.heroFrom = new FormGroup({
       nombre: new FormControl('', [Validators.required, Validators.minLength(20)]),
-      telefono : new FormControl(0, Validators.required)
+      telefono : new FormControl(0, Validators.required),
+      direccion: new FormGroup({
+        calle : new FormControl(),
+        casa : new FormControl()
+      })
     })
   }
 
