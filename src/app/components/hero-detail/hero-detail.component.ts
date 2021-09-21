@@ -9,7 +9,8 @@ import { HeroService } from '../../services/hero.service';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  hero: SuperHero | undefined; 
+  hero: SuperHero | undefined;
+  
   constructor(
     private route: ActivatedRoute,
     private heroService : HeroService 
