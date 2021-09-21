@@ -1,21 +1,26 @@
 <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col" *ngFor="let hero of heroes">
     <div class="card">
-      <img src="{{hero.img}}" class="card-img-top" alt="...">
+      <img src="{{ hero.img }}" class="card-img-top" alt="..." />
       <div class="card-body">
-        <h5 class="card-title">{{hero.name}}</h5>
-        <p class="card-text">{{hero.description}}</p>
+        <h5 class="card-title">{{ hero.name }}</h5>
+        <p class="card-text">{{ hero.description }}</p>
         <a [routerLink]="['/hero', hero.id]" class="btn btn-primary">Ver más</a>
       </div>
     </div>
   </div>
 </div>
 
-<form   [formGroup]="heroForm" (ngSubmit)="onSubmit()">
-  <input class="form-control" formControlName="nombre" type="text">
-  <input class="form-control" formControlName="telefono" type="text">
+<form [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+  <input class="form-control" formControlName="nombre" type="text" />
+  <input class="form-control" formControlName="telefono" type="text" />
   <div formGroupName="direccion">
-    <input class="form-control" formControlName="calle" type="text">
+    <input class="form-control" formControlName="calle" type="text" />
+    <input class="form-control" formControlName="casa" type="text" />
   </div>
-  <button class="btn btn-info" type="submit" [disabled]="!heroForm.valid">Guardar</button>
+  <button class="btn btn-info" type="submit" [disabled]="!heroForm.valid">
+    Guardar
+  </button>
 </form>
+{{ heroForm.value | json }}
+{{ heroForm.valid }}
