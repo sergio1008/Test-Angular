@@ -12,6 +12,9 @@
 </div>
 
 <form   [formGroup]="heroForm" (ngSubmit)="onSubmit()">
-  <input formControlName="nombre" type="text">
-  <button type="submit" [disabled]="!heroForm.valid">Guardar</button>
+  <input class="form-control" formControlName="nombre" type="text">
+  <input class="form-control" formControlName="telefono" type="text">
+  <div formGroupName="direccion"></div>
+  <input class="form-control" formControlName="calle" type="text">
+  <button class="btn btn-info" type="submit" [disabled]="!heroForm.valid">Guardar</button>
 </form>
