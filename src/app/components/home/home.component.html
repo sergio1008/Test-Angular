@@ -13,5 +13,5 @@
 
 <form   [formGroup]="heroForm" (ngSubmit)="onSubmit()">
   <input formControlName="nombre" type="text">
-  <button type="submit">Guardar</button>
+  <button type="submit" [disabled]="!heroForm.valid">Guardar</button>
 </form>
